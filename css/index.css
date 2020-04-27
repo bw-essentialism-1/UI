@@ -151,84 +151,102 @@ body {
   background-color: #222629;
   color: #6B6E70;
   width: 100%;
-  max-width: 1000px;
 }
 a {
   text-decoration: none;
-  color: #e5e5e5;
+  color: #afb2b4;
 }
 footer div p {
   text-align: center;
 }
 .fixedHeader {
-  padding: 0rem;
+  padding: 3rem 0rem 3rem 0rem;
   margin: 0rem;
-  border-color: white;
-  border-style: solid;
+  border-color: #474B4F;
+  border-style: none none solid none;
   border-width: 1px;
   border-radius: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.fixedHeader #primary h1 {
+  font-family: 'Special Elite', sans-serif;
+  color: white;
+  font-size: 9rem;
+  text-align: right;
+}
+.fixedHeader #primary h2 {
+  font-family: 'Special Elite', sans-serif;
+  color: #afb2b4;
+  font-size: 4rem;
+  text-align: right;
+}
+.fixedHeader #secondary {
+  padding-top: 2rem;
+}
+.fixedHeader #secondary h1 {
+  font-family: 'Special Elite', sans-serif;
+  color: #86C232;
+  font-size: 9rem;
+  text-align: left;
+  font-style: italic;
+}
+.fixedHeader #secondary h2 {
+  font-family: 'Special Elite', sans-serif;
+  color: #61892F;
+  font-size: 4rem;
+  text-align: left;
+  font-style: italic;
+}
+.fixedHeader div nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0rem;
+  margin: 0rem 0rem 0rem 5rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+  font-family: 'Averia Sans Libre', sans-serif;
+  color: #afb2b4;
+  font-size: 2rem;
+}
+.fixedHeader div nav a {
+  padding: 0rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+}
+.fixedHeader div nav #signUpLink {
+  color: white;
 }
 .marketingCopyL2R {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0rem;
-  margin: 0rem;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0px;
 }
 .marketingCopyL2R h2 {
-  color: #e5e5e5;
-  padding: 0rem;
-  margin: 0rem;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0px;
+  color: #afb2b4;
 }
 .marketingCopyL2R p {
-  color: #d4d4d4;
-  padding: 0rem;
-  margin: 0rem;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0px;
+  color: #61892F;
 }
 .marketingCopyR2L {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0rem;
-  margin: 0rem;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0px;
 }
 .marketingCopyR2L h2 {
-  color: #e5e5e5;
-  padding: 0rem;
-  margin: 0rem;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0px;
+  color: #afb2b4;
 }
 .marketingCopyR2L p {
-  color: #d4d4d4;
-  padding: 0rem;
-  margin: 0rem;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0px;
+  color: #61892F;
 }
