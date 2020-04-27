@@ -248,6 +248,34 @@ footer div p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0rem 5rem 0rem;
+  margin: 5rem 0rem 15rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+}
+#callToAction div h2 {
+  padding: 0rem;
+  margin: 0rem 0rem 3rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+  font-family: "Special Elite", sans-serif;
+  font-size: 10rem;
+}
+#callToAction div a {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-size: 5rem;
+  color: #222629;
+  background-color: white;
+  padding: 3rem;
+  margin: 0rem;
+  border-color: #86c232;
+  border-style: solid;
+  border-width: 1rem;
+  border-radius: 3rem;
 }
 .marketingCopyL2R {
   display: flex;
@@ -262,7 +290,7 @@ footer div p {
   border-style: none;
   border-width: 0px;
   border-radius: 0px;
-  border-top-right-radius: 100rem;
+  border-top-right-radius: 2rem;
   border-bottom-right-radius: 100rem;
   width: 48%;
   background-color: #61892f;
@@ -301,7 +329,7 @@ footer div p {
   border-style: none;
   border-width: 0px;
   border-radius: 0px;
-  border-top-left-radius: 100rem;
+  border-top-left-radius: 2rem;
   border-bottom-left-radius: 100rem;
   width: 48%;
   background-color: #61892f;
