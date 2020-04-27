@@ -6,6 +6,13 @@
   src: local('Averia Sans Libre Regular'), local('AveriaSansLibre-Regular'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6XaxZG_G5OvCf_rt7FH3B6BHLMEeVJ.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Pontano Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pontano Sans'), local('PontanoSans-Regular'), url(https://fonts.gstatic.com/s/pontanosans/v7/qFdD35GdgYR8EzR6oBLDHa3qwg.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Special Elite';
   font-style: normal;
   font-weight: 400;
@@ -149,7 +156,7 @@ html {
 body {
   margin: 0px auto;
   background-color: #222629;
-  color: #6B6E70;
+  color: #6b6e70;
   width: 100%;
 }
 a {
@@ -159,18 +166,20 @@ a {
 footer {
   padding: 3rem 0rem 3rem 0rem;
   margin: 0rem;
-  border-color: #474B4F;
+  border-color: #474b4f;
   border-style: solid none none none;
   border-width: 1px;
   border-radius: 0px;
 }
 footer div p {
+  font-family: "Special Elite", sans-serif;
   text-align: center;
+  font-size: 2rem;
 }
 .fixedHeader {
   padding: 3rem 0rem 3rem 0rem;
   margin: 0rem;
-  border-color: #474B4F;
+  border-color: #474b4f;
   border-style: none none solid none;
   border-width: 1px;
   border-radius: 0px;
@@ -180,13 +189,13 @@ footer div p {
   align-items: center;
 }
 .fixedHeader #primary h1 {
-  font-family: 'Special Elite', sans-serif;
+  font-family: "Special Elite", sans-serif;
   color: white;
   font-size: 9rem;
   text-align: right;
 }
 .fixedHeader #primary h2 {
-  font-family: 'Special Elite', sans-serif;
+  font-family: "Special Elite", sans-serif;
   color: #afb2b4;
   font-size: 4rem;
   text-align: right;
@@ -195,15 +204,15 @@ footer div p {
   padding-top: 2rem;
 }
 .fixedHeader #secondary h1 {
-  font-family: 'Special Elite', sans-serif;
-  color: #86C232;
+  font-family: "Special Elite", sans-serif;
+  color: #86c232;
   font-size: 9rem;
   text-align: left;
   font-style: italic;
 }
 .fixedHeader #secondary h2 {
-  font-family: 'Special Elite', sans-serif;
-  color: #61892F;
+  font-family: "Special Elite", sans-serif;
+  color: #61892f;
   font-size: 4rem;
   text-align: left;
   font-style: italic;
@@ -219,7 +228,7 @@ footer div p {
   border-style: none;
   border-width: 1px;
   border-radius: 0px;
-  font-family: 'Averia Sans Libre', sans-serif;
+  font-family: "Averia Sans Libre", sans-serif;
   color: #afb2b4;
   font-size: 2rem;
 }
@@ -234,26 +243,50 @@ footer div p {
 .fixedHeader div nav #signUpLink {
   color: white;
 }
+#callToAction div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .marketingCopyL2R {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.marketingCopyL2R div {
-  background-color: #61892F;
+.marketingCopyL2R .L2RTitle {
+  padding: 15rem 10rem 15rem 10rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 100rem;
+  border-bottom-right-radius: 100rem;
+  width: 48%;
+  background-color: #61892f;
+}
+.marketingCopyL2R .L2RText {
+  padding: 15rem 10rem 15rem 10rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0px;
+  width: 52%;
 }
 .marketingCopyL2R h2 {
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 0rem;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0px;
-  color: #afb2b4;
+  font-family: "Averia Sans Libre", sans-serif;
+  color: white;
+  text-align: right;
+  font-size: 6rem;
 }
 .marketingCopyL2R p {
-  color: #61892F;
+  font-family: "Pontano Sans", sans-serif;
+  color: #afb2b4;
+  text-align: center;
+  font-size: 2rem;
 }
 .marketingCopyR2L {
   display: flex;
@@ -261,9 +294,42 @@ footer div p {
   justify-content: center;
   align-items: center;
 }
+.marketingCopyR2L .R2LTitle {
+  padding: 15rem 0rem 15rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0px;
+  border-top-left-radius: 100rem;
+  border-bottom-left-radius: 100rem;
+  width: 48%;
+  background-color: #61892f;
+}
+.marketingCopyR2L .R2LText {
+  padding: 15rem 10rem 15rem 10rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0px;
+  width: 52%;
+}
 .marketingCopyR2L h2 {
-  color: #afb2b4;
+  font-family: "Averia Sans Libre", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 6rem;
+  padding: 0rem;
+  margin: 0rem 0rem 0rem 10rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
 }
 .marketingCopyR2L p {
-  color: #61892F;
+  font-family: "Pontano Sans", sans-serif;
+  color: #afb2b4;
+  text-align: center;
+  font-size: 2rem;
 }
