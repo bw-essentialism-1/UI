@@ -156,6 +156,14 @@ a {
   text-decoration: none;
   color: #afb2b4;
 }
+footer {
+  padding: 3rem 0rem 3rem 0rem;
+  margin: 0rem;
+  border-color: #474B4F;
+  border-style: solid none none none;
+  border-width: 1px;
+  border-radius: 0px;
+}
 footer div p {
   text-align: center;
 }
@@ -232,7 +240,16 @@ footer div p {
   justify-content: center;
   align-items: center;
 }
+.marketingCopyL2R div {
+  background-color: #61892F;
+}
 .marketingCopyL2R h2 {
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0rem;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0px;
   color: #afb2b4;
 }
 .marketingCopyL2R p {
