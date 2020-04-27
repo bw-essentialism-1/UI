@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'Averia Sans Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Averia Sans Libre Regular'), local('AveriaSansLibre-Regular'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6XaxZG_G5OvCf_rt7FH3B6BHLMEeVJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pontano Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pontano Sans'), local('PontanoSans-Regular'), url(https://fonts.gstatic.com/s/pontanosans/v7/qFdD35GdgYR8EzR6oBLDHa3qwg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Special Elite Regular'), local('SpecialElite-Regular'), url(https://fonts.gstatic.com/s/specialelite/v10/XLYgIZbkc4JPUL5CVArUVL0nhnc.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0px auto;
+  background-color: #222629;
+  color: #6b6e70;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #afb2b4;
+}
+footer {
+  padding: 3rem 0rem 3rem 0rem;
+  margin: 0rem;
+  border-color: #474b4f;
+  border-style: solid none none none;
+  border-width: 1px;
+  border-radius: 0px;
+}
+footer div p {
+  font-family: "Special Elite", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+#headerSpacing {
+  padding: 25rem 0rem 0rem 0rem;
+  margin: 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+}
+.fixedHeader {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #222629;
+  padding: 3rem 0rem 3rem 0rem;
+  margin: 0rem;
+  border-color: #474b4f;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fixedHeader #primary h1 {
+  font-family: "Special Elite", sans-serif;
+  color: white;
+  font-size: 9rem;
+  text-align: right;
+}
+.fixedHeader #primary h2 {
+  font-family: "Special Elite", sans-serif;
+  color: #afb2b4;
+  font-size: 4rem;
+  text-align: right;
+}
+.fixedHeader #secondary {
+  padding-top: 2rem;
+}
+.fixedHeader #secondary h1 {
+  font-family: "Special Elite", sans-serif;
+  color: #86c232;
+  font-size: 9rem;
+  text-align: left;
+  font-style: italic;
+}
+.fixedHeader #secondary h2 {
+  font-family: "Special Elite", sans-serif;
+  color: #61892f;
+  font-size: 4rem;
+  text-align: left;
+  font-style: italic;
+}
+.fixedHeader div nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0rem;
+  margin: 0rem 0rem 0rem 5rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+  font-family: "Averia Sans Libre", sans-serif;
+  color: #afb2b4;
+  font-size: 2rem;
+}
+.fixedHeader div nav a {
+  padding: 0rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+}
+.fixedHeader div nav #signUpLink {
+  color: white;
+}
+#callToAction div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0rem 5rem 0rem;
+  margin: 5rem 0rem 15rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+}
+#callToAction div h2 {
+  padding: 0rem;
+  margin: 0rem 0rem 3rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+  font-family: "Special Elite", sans-serif;
+  font-size: 10rem;
+}
+#callToAction div a {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-size: 5rem;
+  color: #222629;
+  background-color: white;
+  padding: 3rem;
+  margin: 0rem;
+  border-color: #86c232;
+  border-style: solid;
+  border-width: 1rem;
+  border-radius: 3rem;
+}
+.marketingCopyL2R {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.marketingCopyL2R .L2RTitle {
+  padding: 15rem 10rem 15rem 10rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 100rem;
+  width: 48%;
+  background-color: #61892f;
+}
+.marketingCopyL2R .L2RText {
+  padding: 15rem 10rem 15rem 10rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0px;
+  width: 52%;
+}
+.marketingCopyL2R h2 {
+  font-family: "Averia Sans Libre", sans-serif;
+  color: white;
+  text-align: right;
+  font-size: 6rem;
+}
+.marketingCopyL2R p {
+  font-family: "Pontano Sans", sans-serif;
+  color: #afb2b4;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.marketingCopyR2L {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.marketingCopyR2L .R2LTitle {
+  padding: 15rem 0rem 15rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0px;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 100rem;
+  width: 48%;
+  background-color: #61892f;
+}
+.marketingCopyR2L .R2LText {
+  padding: 15rem 10rem 15rem 10rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0px;
+  width: 52%;
+}
+.marketingCopyR2L h2 {
+  font-family: "Averia Sans Libre", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 6rem;
+  padding: 0rem;
+  margin: 0rem 0rem 0rem 10rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+}
+.marketingCopyR2L p {
+  font-family: "Pontano Sans", sans-serif;
+  color: #afb2b4;
+  text-align: center;
+  font-size: 2.5rem;
+}

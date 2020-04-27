@@ -1,0 +1,116 @@
+#callToAction {
+
+    div {
+
+        .flexProperties(column, center);
+        .boxProperties(5rem 0rem 5rem 0rem, 5rem 0rem 15rem 0rem, none, none);
+
+        h2 {
+
+            .boxProperties(0rem, 0rem 0rem 3rem 0rem, none, none);
+            font-family: @titleFont;
+            font-size: 10rem;
+
+        }
+
+        a {
+
+            .buttonProperties();
+
+        }
+
+    }
+
+}
+
+.marketingCopyL2R {
+
+    .flexProperties(row, center);
+    
+    .L2RTitle {
+
+        .boxProperties(15rem 10rem 15rem 10rem, 1rem 0rem 1rem 0rem, none, none, 0px);
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 100rem;
+        
+        width: 48%;
+        background-color: @subtitleSecondary;
+
+    }
+
+    .L2RText {
+
+        .boxProperties(15rem 10rem 15rem 10rem, 1rem 0rem 1rem 0rem, none, none, 0px);
+        
+        width: 52%;
+
+    }
+
+    h2 {
+        
+        font-family: @copyH2Font;
+
+        color: @titlePrimary;
+        text-align: right;
+        font-size: 6rem;
+
+    }
+
+    p {
+
+        font-family: @pFont;
+
+        color: @subtitlePrimary;
+        text-align: center;
+        font-size: 2.5rem;
+
+    }
+
+}
+
+.marketingCopyR2L {
+
+    .flexProperties(row, center);
+
+    .R2LTitle {
+
+        .boxProperties(15rem 0rem 15rem 0rem, 1rem 0rem 1rem 0rem, none, none, 0px);
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 100rem;
+        
+        width: 48%;
+        background-color: @subtitleSecondary;
+
+    }
+
+    .R2LText {
+        
+        .boxProperties(15rem 10rem 15rem 10rem, 1rem 0rem 1rem 0rem, none, none, 0px);
+        
+        width: 52%;
+
+    }
+
+    h2 {
+        
+        font-family: @copyH2Font;
+
+        color: @titlePrimary;
+        text-align: left;
+        font-size: 6rem;
+
+        .boxProperties(0rem, 0rem 0rem 0rem 10rem, none, none);
+
+    }
+
+    p {
+
+        font-family: @pFont;
+
+        color: @subtitlePrimary;
+        text-align: center;
+        font-size: 2.5rem;
+
+    }
+
+}

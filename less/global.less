@@ -1,0 +1,135 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    font-size: 62.5%;
+
+}
+
+body {
+
+    margin: 0px auto;
+
+    background-color: @darkGray;
+    color: @lightGray;
+
+    width: 100%;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: @subtitlePrimary;
+
+}
+
+footer {
+
+    .boxProperties(3rem 0rem 3rem 0rem, 0rem, @mediumGray, solid none none none);
+
+    div p {
+
+        font-family: @footerFont;
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+}
+
+#headerSpacing {
+
+    .boxProperties(25rem 0rem 0rem 0rem, 0rem, none, none);
+
+}
+
+.fixedHeader {
+
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: @darkGray;
+    .boxProperties(3rem 0rem 3rem 0rem, 0rem, @mediumGray, none none solid none);
+    .flexProperties(row);
+
+    #primary {
+
+        h1 {
+
+            font-family: @titleFont;
+            color: @titlePrimary;
+            font-size: 9rem;
+            text-align: right;
+
+        }
+
+        h2 {
+
+            font-family: @subtitleFont;
+            color: @subtitlePrimary;
+            font-size: 4rem;
+            text-align: right;
+
+        }
+
+    }
+
+    #secondary {
+
+        padding-top: 2rem;
+
+        h1 {
+
+            font-family: @titleFont;
+            color: @titleSecondary;
+            font-size: 9rem;
+            text-align: left;
+            font-style: italic;
+
+        }
+
+        h2 {
+
+            font-family: @subtitleFont;
+            color: @subtitleSecondary;
+            font-size: 4rem;
+            text-align: left;
+            font-style: italic;
+            
+        }
+
+    }
+
+    div {
+
+        nav {
+
+            .flexProperties(column, space-between, flex-end);
+            .boxProperties(0rem, 0rem 0rem 0rem 5rem, none, none);
+
+            font-family: @navFont;
+            color: @navLinks;
+            font-size: 2rem;
+
+            a {
+
+                .boxProperties(0rem, 0.5rem 0rem 0.5rem 0rem, none, none);
+
+            }
+
+            #signUpLink {
+
+                color: @titlePrimary;
+
+            }
+
+        }
+
+    }
+
+}
