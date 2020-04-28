@@ -1,0 +1,48 @@
+.aboutItem {
+
+    .flexProperties(row, center);
+    .boxProperties(0rem, 2.5rem 0rem 2.5rem 0rem, none, none);
+
+    .aboutItemImage {
+
+        width: 40%;
+
+        .flexProperties(column, flex-end, flex-end);
+        .boxProperties(0rem, 0rem, none, none);
+
+        img {
+
+            width: 200px;
+            height: 200px;
+            border-radius: 20rem;
+
+        }
+
+    }
+
+    .aboutItemInfo {
+
+        width: 60%;
+
+        .flexProperties(column, center, flex-start);
+        .boxProperties(0rem, 0rem 0rem 0rem 5rem, none, none);
+
+        p {
+
+            font-family: @nameFont;
+            font-size: 6rem;
+            color: @navLinks;
+
+        }
+
+        a {
+
+            font-family: @pFont;
+            font-size: 3rem;
+
+
+        }
+
+    }
+
+}
