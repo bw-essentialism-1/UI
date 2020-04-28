@@ -401,7 +401,7 @@ footer div p {
 .aboutItem .aboutItemImage img {
   width: 200px;
   height: 200px;
-  border-radius: 20rem;
+  border-radius: 5rem;
 }
 .aboutItem .aboutItemInfo {
   width: 60%;
@@ -417,7 +417,7 @@ footer div p {
   border-radius: 0px;
 }
 .aboutItem .aboutItemInfo p {
-  font-family: "Averia Sans Libre", sans-serif;
+  font-family: "Special Elite", sans-serif;
   font-size: 6rem;
   color: #afb2b4;
 }
