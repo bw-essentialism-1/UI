@@ -538,7 +538,7 @@ footer div p {
 }
 @media (max-width: 500px) {
   .marketingCopyL2R .L2RTitle h2 {
-    padding-left: 5rem;
+    padding-left: 7.5rem;
     width: 80%;
     text-align: right;
   }
@@ -702,18 +702,37 @@ footer div p {
   border-width: 1px;
   border-radius: 0px;
 }
+@media (max-width: 800px) {
+  .aboutItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .aboutItem .aboutItemImage {
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   padding: 0rem;
   margin: 0rem;
   border-color: none;
   border-style: none;
   border-width: 1px;
   border-radius: 0px;
+}
+@media (max-width: 1050px) {
+  .aboutItem .aboutItemImage {
+    width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .aboutItem .aboutItemImage {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
 }
 .aboutItem .aboutItemImage img {
   width: 200px;
@@ -733,19 +752,69 @@ footer div p {
   border-width: 1px;
   border-radius: 0px;
 }
+@media (max-width: 1050px) {
+  .aboutItem .aboutItemInfo {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  .aboutItem .aboutItemInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+    border-color: none;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 0px;
+  }
+}
 .aboutItem .aboutItemInfo .aboutItemSubtitle {
   font-family: "Averia Sans Libre", sans-serif;
   font-size: 4rem;
   margin-bottom: 1rem;
   margin-left: 1.5rem;
+  color: #afb2b4;
+}
+@media (max-width: 800px) {
+  .aboutItem .aboutItemInfo .aboutItemSubtitle {
+    font-size: 5rem;
+    margin-left: 0rem;
+  }
 }
 .aboutItem .aboutItemInfo p {
   font-family: "Special Elite", sans-serif;
   font-size: 6rem;
-  color: #afb2b4;
+  color: white;
 }
-.aboutItem .aboutItemInfo a {
+@media (max-width: 800px) {
+  .aboutItem .aboutItemInfo p {
+    font-size: 6rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+}
+.aboutItem .aboutItemInfo .largeLink {
   font-family: "Pontano Sans", sans-serif;
   font-size: 3rem;
   margin-left: 3rem;
+}
+@media (max-width: 800px) {
+  .aboutItem .aboutItemInfo .largeLink {
+    display: none;
+  }
+}
+.aboutItem .aboutItemInfo .smallLink {
+  display: none;
+}
+@media (max-width: 800px) {
+  .aboutItem .aboutItemInfo .smallLink {
+    display: block;
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
