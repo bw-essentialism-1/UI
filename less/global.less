@@ -16,7 +16,6 @@ body {
 
     background-color: @body;
     color: @lightGray;
-
     width: 100%;
 
 }
@@ -48,6 +47,18 @@ footer {
 
     .boxProperties(25rem 0rem 0rem 0rem, 0rem, none, none);
 
+    @media @tablet {
+
+        padding-top: 30rem;
+
+    }
+
+    @media @mobile {
+
+        padding-top: 2rem;
+
+    }
+
 }
 
 .fixedHeader {
@@ -59,55 +70,148 @@ footer {
     .boxProperties(3rem 0rem 3rem 0rem, 0rem, @mediumGray, none none solid none);
     .flexProperties(row);
 
-    #primary {
+    @media @tablet {
 
-        h1 {
-
-            font-family: @titleFont;
-            color: @titlePrimary;
-            font-size: 9rem;
-            text-align: right;
-
-        }
-
-        h2 {
-
-            font-family: @subtitleFont;
-            color: @subtitlePrimary;
-            font-size: 4rem;
-            text-align: right;
-
-        }
+        padding-left: 2rem;
+        padding-right: 2rem;
+        .flexProperties(column);
 
     }
 
-    #secondary {
-
-        padding-top: 2rem;
-
-        h1 {
-
-            font-family: @titleFont;
-            color: @titleSecondary;
-            font-size: 9rem;
-            text-align: left;
-            font-style: italic;
-
-        }
-
-        h2 {
-
-            font-family: @subtitleFont;
-            color: @subtitleSecondary;
-            font-size: 4rem;
-            text-align: left;
-            font-style: italic;
-            
-        }
+    @media @mobile {
+    
+        position: relative;
+        padding-bottom: 0rem;
 
     }
 
     div {
+
+        .flexProperties(row);
+
+        #primary {
+
+            .flexProperties(column, center, flex-end);
+
+            h1 {
+    
+                font-family: @titleFont;
+                color: @titlePrimary;
+                font-size: 9rem;
+                text-align: right;
+
+                @media @smallDesktop {
+
+                    font-size: 7.5rem;
+
+                }
+
+                @media @tablet {
+    
+                    font-size: 5rem;
+    
+                }
+
+                @media @mobile {
+
+                    font-size: 3.5rem;
+
+                }
+    
+            }
+    
+            h2 {
+    
+                font-family: @subtitleFont;
+                color: @subtitlePrimary;
+                font-size: 4rem;
+                text-align: right;
+
+                @media @smallDesktop {
+
+                    font-size: 3rem;
+
+                }
+
+                @media @tablet {
+    
+                    font-size: 2.5rem;
+    
+                }
+
+                @media @mobile {
+
+                    font-size: 2rem;
+
+                }
+    
+            }
+    
+        }
+    
+        #secondary {
+
+            .flexProperties(column, center, flex-start);
+    
+            padding-top: 2rem;
+    
+            h1 {
+    
+                font-family: @titleFont;
+                color: @titleSecondary;
+                font-size: 9rem;
+                text-align: left;
+                font-style: italic;
+
+                @media @smallDesktop {
+
+                    font-size: 7.5rem;
+
+                }
+
+                @media @tablet {
+    
+                    font-size: 5rem;
+    
+                }
+                
+                @media @mobile {
+
+                    font-size: 3.5rem;
+
+                }
+    
+            }
+    
+            h2 {
+    
+                font-family: @subtitleFont;
+                color: @subtitleSecondary;
+                font-size: 4rem;
+                text-align: left;
+                font-style: italic;
+
+                @media @smallDesktop {
+
+                    font-size: 3rem;
+
+                }
+
+                @media @tablet {
+    
+                    font-size: 2.5rem;
+    
+                }
+
+                @media @mobile {
+
+                    font-size: 2rem;
+
+                }
+                
+            }
+
+        }
 
         nav {
 
@@ -120,9 +224,39 @@ footer {
 
             .highlightColorAnimation(@navLinks, @navLinks + #444444);
 
+            @media @tablet {
+
+                margin-left: 0rem;
+                .flexProperties(row);
+                flex-wrap: wrap;
+
+            }
+
+            @media @mobile {
+
+                .flexProperties(column);
+                flex-wrap: none;
+
+            }
+
             a {
 
                 .boxProperties(0rem, 0.5rem 0rem 0.5rem 0rem, none, none);
+
+                @media @tablet {
+    
+                    //.boxProperties(0rem, 2rem 2rem 2rem 2rem, none, none);
+                    .boxProperties(2rem 0rem 2rem 0rem, 0rem, none, none);
+                    text-align: center;
+                    width: 50%;
+
+                }
+
+                @media @mobile {
+
+                    width: 100%;
+
+                }
 
             }
 

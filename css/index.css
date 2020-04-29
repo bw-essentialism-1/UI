@@ -186,6 +186,16 @@ footer div p {
   border-width: 1px;
   border-radius: 0px;
 }
+@media (max-width: 800px) {
+  #headerSpacing {
+    padding-top: 30rem;
+  }
+}
+@media (max-width: 500px) {
+  #headerSpacing {
+    padding-top: 2rem;
+  }
+}
 .fixedHeader {
   width: 100%;
   position: fixed;
@@ -202,34 +212,126 @@ footer div p {
   justify-content: center;
   align-items: center;
 }
-.fixedHeader #primary h1 {
+@media (max-width: 800px) {
+  .fixedHeader {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .fixedHeader {
+    position: relative;
+    padding-bottom: 0rem;
+  }
+}
+.fixedHeader div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fixedHeader div #primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.fixedHeader div #primary h1 {
   font-family: "Special Elite", sans-serif;
   color: white;
   font-size: 9rem;
   text-align: right;
 }
-.fixedHeader #primary h2 {
+@media (max-width: 1050px) {
+  .fixedHeader div #primary h1 {
+    font-size: 7.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .fixedHeader div #primary h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .fixedHeader div #primary h1 {
+    font-size: 3.5rem;
+  }
+}
+.fixedHeader div #primary h2 {
   font-family: "Special Elite", sans-serif;
   color: #afb2b4;
   font-size: 4rem;
   text-align: right;
 }
-.fixedHeader #secondary {
+@media (max-width: 1050px) {
+  .fixedHeader div #primary h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .fixedHeader div #primary h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .fixedHeader div #primary h2 {
+    font-size: 2rem;
+  }
+}
+.fixedHeader div #secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding-top: 2rem;
 }
-.fixedHeader #secondary h1 {
+.fixedHeader div #secondary h1 {
   font-family: "Special Elite", sans-serif;
   color: #86c232;
   font-size: 9rem;
   text-align: left;
   font-style: italic;
 }
-.fixedHeader #secondary h2 {
+@media (max-width: 1050px) {
+  .fixedHeader div #secondary h1 {
+    font-size: 7.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .fixedHeader div #secondary h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .fixedHeader div #secondary h1 {
+    font-size: 3.5rem;
+  }
+}
+.fixedHeader div #secondary h2 {
   font-family: "Special Elite", sans-serif;
   color: #61892f;
   font-size: 4rem;
   text-align: left;
   font-style: italic;
+}
+@media (max-width: 1050px) {
+  .fixedHeader div #secondary h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .fixedHeader div #secondary h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .fixedHeader div #secondary h2 {
+    font-size: 2rem;
+  }
 }
 .fixedHeader div nav {
   display: flex;
@@ -272,6 +374,25 @@ footer div p {
     color: #f3f6f8;
   }
 }
+@media (max-width: 800px) {
+  .fixedHeader div nav {
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .fixedHeader div nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+  }
+}
 .fixedHeader div nav a {
   padding: 0rem;
   margin: 0.5rem 0rem 0.5rem 0rem;
@@ -279,6 +400,23 @@ footer div p {
   border-style: none;
   border-width: 1px;
   border-radius: 0px;
+}
+@media (max-width: 800px) {
+  .fixedHeader div nav a {
+    padding: 2rem 0rem 2rem 0rem;
+    margin: 0rem;
+    border-color: none;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 0px;
+    text-align: center;
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .fixedHeader div nav a {
+    width: 100%;
+  }
 }
 #callToAction div {
   display: flex;
@@ -292,6 +430,11 @@ footer div p {
   border-width: 1px;
   border-radius: 0px;
 }
+@media (max-width: 800px) {
+  #callToAction div {
+    padding: 0rem;
+  }
+}
 #callToAction div h2 {
   padding: 0rem;
   margin: 0rem 0rem 3rem 0rem;
@@ -302,6 +445,17 @@ footer div p {
   font-family: "Special Elite", sans-serif;
   font-size: 10rem;
   color: white;
+}
+@media (max-width: 1050px) {
+  #callToAction div h2 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  #callToAction div h2 {
+    text-align: center;
+    width: 80%;
+  }
 }
 #callToAction div a {
   font-family: "Averia Sans Libre", sans-serif;
@@ -315,11 +469,25 @@ footer div p {
   border-width: 1rem;
   border-radius: 3rem;
 }
+@media (max-width: 500px) {
+  #callToAction div a {
+    text-align: center;
+    width: 90%;
+  }
+}
 .marketingCopyL2R {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .marketingCopyL2R {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .marketingCopyL2R .L2RTitle {
   padding: 15rem 10rem 15rem 10rem;
@@ -333,6 +501,48 @@ footer div p {
   width: 48%;
   background-color: #61892f;
 }
+@media (max-width: 1050px) {
+  .marketingCopyL2R .L2RTitle {
+    border-bottom-right-radius: 2rem;
+    padding-right: 0rem;
+  }
+}
+@media (max-width: 800px) {
+  .marketingCopyL2R .L2RTitle {
+    width: 100%;
+    padding: 5rem 0rem 5rem 0rem;
+    margin: 0rem 10% 0rem 10%;
+    border-color: none;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 0px;
+  }
+}
+.marketingCopyL2R .L2RTitle h2 {
+  font-family: "Averia Sans Libre", sans-serif;
+  color: white;
+  text-align: right;
+  font-size: 6rem;
+}
+@media (max-width: 1050px) {
+  .marketingCopyL2R .L2RTitle h2 {
+    padding-right: 0rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .marketingCopyL2R .L2RTitle h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .marketingCopyL2R .L2RTitle h2 {
+    padding-left: 5rem;
+    width: 80%;
+    text-align: right;
+  }
+}
 .marketingCopyL2R .L2RText {
   padding: 15rem 10rem 15rem 10rem;
   margin: 1rem 0rem 1rem 0rem;
@@ -342,23 +552,47 @@ footer div p {
   border-radius: 0px;
   width: 52%;
 }
-.marketingCopyL2R h2 {
-  font-family: "Averia Sans Libre", sans-serif;
-  color: white;
-  text-align: right;
-  font-size: 6rem;
+@media (max-width: 800px) {
+  .marketingCopyL2R .L2RText {
+    width: 80%;
+    padding: 3rem 0rem 3rem 0rem;
+    margin: 0rem 10% 0rem 10%;
+    border-color: none;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 0px;
+  }
 }
-.marketingCopyL2R p {
+.marketingCopyL2R .L2RText p {
   font-family: "Pontano Sans", sans-serif;
   color: #afb2b4;
   text-align: center;
   font-size: 2.5rem;
+}
+@media (max-width: 1050px) {
+  .marketingCopyL2R .L2RText p {
+    text-align: right;
+  }
+}
+@media (max-width: 800px) {
+  .marketingCopyL2R .L2RText p {
+    text-align: left;
+    padding-bottom: 4rem;
+  }
 }
 .marketingCopyR2L {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .marketingCopyR2L {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .marketingCopyR2L .R2LTitle {
   padding: 15rem 0rem 15rem 0rem;
@@ -372,16 +606,23 @@ footer div p {
   width: 48%;
   background-color: #61892f;
 }
-.marketingCopyR2L .R2LText {
-  padding: 15rem 10rem 15rem 10rem;
-  margin: 1rem 0rem 1rem 0rem;
-  border-color: none;
-  border-style: none;
-  border-width: 0px;
-  border-radius: 0px;
-  width: 52%;
+@media (max-width: 1050px) {
+  .marketingCopyR2L .R2LTitle {
+    border-bottom-left-radius: 2rem;
+  }
 }
-.marketingCopyR2L h2 {
+@media (max-width: 800px) {
+  .marketingCopyR2L .R2LTitle {
+    width: 100%;
+    padding: 5rem 0rem 5rem 0rem;
+    margin: 0rem 10% 0rem 10%;
+    border-color: none;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 0px;
+  }
+}
+.marketingCopyR2L .R2LTitle h2 {
   font-family: "Averia Sans Libre", sans-serif;
   color: white;
   text-align: left;
@@ -393,11 +634,61 @@ footer div p {
   border-width: 1px;
   border-radius: 0px;
 }
-.marketingCopyR2L p {
+@media (max-width: 1050px) {
+  .marketingCopyR2L .R2LTitle h2 {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .marketingCopyR2L .R2LTitle h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 500px) {
+  .marketingCopyR2L .R2LTitle h2 {
+    padding-left: 5rem;
+    width: 80%;
+    text-align: right;
+  }
+}
+.marketingCopyR2L .R2LText {
+  padding: 15rem 10rem 15rem 10rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0px;
+  width: 52%;
+}
+@media (max-width: 800px) {
+  .marketingCopyR2L .R2LText {
+    width: 80%;
+    padding: 3rem 0rem 3rem 0rem;
+    margin: 0rem 10% 0rem 10%;
+    border-color: none;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 0px;
+  }
+}
+.marketingCopyR2L .R2LText p {
   font-family: "Pontano Sans", sans-serif;
   color: #afb2b4;
   text-align: center;
   font-size: 2.5rem;
+}
+@media (max-width: 1050px) {
+  .marketingCopyR2L .R2LText p {
+    text-align: left;
+  }
+}
+@media (max-width: 800px) {
+  .marketingCopyR2L .R2LText p {
+    text-align: left;
+    padding-bottom: 4rem;
+  }
 }
 .aboutItem {
   display: flex;

@@ -5,6 +5,12 @@
         .flexProperties(column, center);
         .boxProperties(5rem 0rem 5rem 0rem, 5rem 0rem 15rem 0rem, none, none);
 
+        @media @tablet {
+
+            padding: 0rem;
+
+        }
+
         h2 {
 
             .boxProperties(0rem, 0rem 0rem 3rem 0rem, none, none);
@@ -12,11 +18,31 @@
             font-size: 10rem;
             color: @CTAtext;
 
+            @media @smallDesktop {
+
+                font-size: 5rem;
+
+            }
+
+            @media @mobile {
+
+                text-align: center;
+                width: 80%;
+
+            }
+
         }
 
         a {
 
             .buttonProperties();
+
+            @media @mobile {
+
+                text-align: center;
+                width: 90%;
+
+            }
 
         }
 
@@ -27,6 +53,12 @@
 .marketingCopyL2R {
 
     .flexProperties(row, center);
+
+    @media @tablet {
+
+        .flexProperties(column, center);
+
+    }
     
     .L2RTitle {
 
@@ -37,6 +69,52 @@
         width: 48%;
         background-color: @subtitleSecondary;
 
+        @media @smallDesktop {
+
+            border-bottom-right-radius: 2rem;
+            padding-right: 0rem;
+
+        }
+
+        @media @tablet {
+
+            width: 100%;
+            .boxProperties(5rem 0rem 5rem 0rem, 0rem 10% 0rem 10%, none, none);
+
+        }
+
+        h2 {
+            
+            font-family: @copyH2Font;
+
+            color: @titlePrimary;
+            text-align: right;
+            font-size: 6rem;
+
+            @media @smallDesktop {
+
+                padding-right: 0rem;
+                margin-right: 2rem;
+
+            }
+
+            @media @tablet {
+
+                text-align: center;
+                font-size: 4rem;
+
+            }
+
+            @media @mobile {
+
+                padding-left: 5rem;
+                width: 80%;
+                text-align: right;
+
+            }
+
+        }
+
     }
 
     .L2RText {
@@ -45,25 +123,35 @@
         
         width: 52%;
 
-    }
+        @media @tablet {
 
-    h2 {
-        
-        font-family: @copyH2Font;
+            width: 80%;
+            .boxProperties(3rem 0rem 3rem 0rem, 0rem 10% 0rem 10%, none, none);
 
-        color: @titlePrimary;
-        text-align: right;
-        font-size: 6rem;
+        }
 
-    }
+        p {
+    
+            font-family: @pFont;
+    
+            color: @subtitlePrimary;
+            text-align: center;
+            font-size: 2.5rem;
 
-    p {
+            @media @smallDesktop {
 
-        font-family: @pFont;
+                text-align: right;
 
-        color: @subtitlePrimary;
-        text-align: center;
-        font-size: 2.5rem;
+            }
+
+            @media @tablet {
+
+                text-align: left;
+                padding-bottom: 4rem;
+
+            }
+    
+        }
 
     }
 
@@ -72,6 +160,12 @@
 .marketingCopyR2L {
 
     .flexProperties(row, center);
+
+    @media @tablet {
+
+        .flexProperties(column-reverse, center);
+
+    }
 
     .R2LTitle {
 
@@ -82,6 +176,53 @@
         width: 48%;
         background-color: @subtitleSecondary;
 
+        @media @smallDesktop {
+
+            border-bottom-left-radius: 2rem;
+
+        }
+
+        @media @tablet {
+
+            width: 100%;
+            .boxProperties(5rem 0rem 5rem 0rem, 0rem 10% 0rem 10%, none, none);
+
+        }
+
+        h2 {
+        
+            font-family: @copyH2Font;
+    
+            color: @titlePrimary;
+            text-align: left;
+            font-size: 6rem;
+    
+            .boxProperties(0rem, 0rem 0rem 0rem 10rem, none, none);
+    
+            @media @smallDesktop {
+    
+                margin-left: 2rem;
+    
+            }
+
+            @media @tablet {
+
+                text-align: center;
+                font-size: 4rem;
+                margin-left: 0rem;
+
+            }
+
+            @media @mobile {
+
+                padding-left: 5rem;
+                width: 80%;
+                text-align: right;
+
+            }
+    
+        }
+
     }
 
     .R2LText {
@@ -90,27 +231,35 @@
         
         width: 52%;
 
-    }
+        @media @tablet {
 
-    h2 {
-        
-        font-family: @copyH2Font;
+            width: 80%;
+            .boxProperties(3rem 0rem 3rem 0rem, 0rem 10% 0rem 10%, none, none);
 
-        color: @titlePrimary;
-        text-align: left;
-        font-size: 6rem;
+        }
 
-        .boxProperties(0rem, 0rem 0rem 0rem 10rem, none, none);
+        p {
+    
+            font-family: @pFont;
+    
+            color: @subtitlePrimary;
+            text-align: center;
+            font-size: 2.5rem;
 
-    }
+            @media @smallDesktop {
 
-    p {
+                text-align: left;
 
-        font-family: @pFont;
+            }
 
-        color: @subtitlePrimary;
-        text-align: center;
-        font-size: 2.5rem;
+            @media @tablet {
+
+                text-align: left;
+                padding-bottom: 4rem;
+
+            }
+    
+        }
 
     }
 
