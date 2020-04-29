@@ -155,7 +155,7 @@ html {
 }
 body {
   margin: 0px auto;
-  background-color: #222629;
+  background-color: #333b3a;
   color: #6b6e70;
   width: 100%;
 }
@@ -170,9 +170,11 @@ footer {
   border-style: solid none none none;
   border-width: 1px;
   border-radius: 0px;
+  background-color: #222629;
 }
 footer div p {
   font-family: "Special Elite", sans-serif;
+  color: #6b6e70;
   text-align: center;
   font-size: 2rem;
 }
@@ -245,15 +247,38 @@ footer div p {
   font-size: 2rem;
 }
 .fixedHeader div nav a {
+  animation-name: hlcaOff;
+  animation-duration: 0.1s;
+  color: #afb2b4;
+}
+@keyframes hlcaOff {
+  from {
+    color: #f3f6f8;
+  }
+  to {
+    color: #afb2b4;
+  }
+}
+.fixedHeader div nav a:hover {
+  animation-name: hlcaOn;
+  animation-duration: 0.5s;
+  color: #f3f6f8;
+}
+@keyframes hlcaOn {
+  from {
+    color: #afb2b4;
+  }
+  to {
+    color: #f3f6f8;
+  }
+}
+.fixedHeader div nav a {
   padding: 0rem;
   margin: 0.5rem 0rem 0.5rem 0rem;
   border-color: none;
   border-style: none;
   border-width: 1px;
   border-radius: 0px;
-}
-.fixedHeader div nav #signUpLink {
-  color: white;
 }
 #callToAction div {
   display: flex;
@@ -276,6 +301,7 @@ footer div p {
   border-radius: 0px;
   font-family: "Special Elite", sans-serif;
   font-size: 10rem;
+  color: white;
 }
 #callToAction div a {
   font-family: "Averia Sans Libre", sans-serif;
@@ -379,7 +405,7 @@ footer div p {
   justify-content: center;
   align-items: center;
   padding: 0rem;
-  margin: 2.5rem 0rem 2.5rem 0rem;
+  margin: 0rem 0rem 5rem 0rem;
   border-color: none;
   border-style: none;
   border-width: 1px;
@@ -410,11 +436,17 @@ footer div p {
   justify-content: center;
   align-items: flex-start;
   padding: 0rem;
-  margin: 0rem 0rem 0rem 5rem;
+  margin: 0rem 0rem 0rem 2.5rem;
   border-color: none;
   border-style: none;
   border-width: 1px;
   border-radius: 0px;
+}
+.aboutItem .aboutItemInfo .aboutItemSubtitle {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
 }
 .aboutItem .aboutItemInfo p {
   font-family: "Special Elite", sans-serif;
@@ -424,4 +456,5 @@ footer div p {
 .aboutItem .aboutItemInfo a {
   font-family: "Pontano Sans", sans-serif;
   font-size: 3rem;
+  margin-left: 3rem;
 }

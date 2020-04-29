@@ -1,0 +1,51 @@
+.highlightColorAnimation(@from, @to) {
+
+    a {
+
+        @keyframes hlcaOff {
+
+            from {
+    
+                color: @to;
+    
+            }
+    
+            to {
+    
+                color: @from;
+    
+            }
+    
+        }
+
+    animation-name: hlcaOff;
+    animation-duration: 0.1s;
+    color: @from;
+
+    }
+
+    a:hover {
+
+        @keyframes hlcaOn {
+
+            from {
+    
+                color: @from;
+    
+            }
+    
+            to {
+    
+                color: @to;
+    
+            }
+    
+        }
+
+        animation-name: hlcaOn;
+        animation-duration: 0.5s;
+        color: @to;
+
+    }
+
+}

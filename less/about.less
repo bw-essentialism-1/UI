@@ -1,7 +1,7 @@
 .aboutItem {
 
     .flexProperties(row, center);
-    .boxProperties(0rem, 2.5rem 0rem 2.5rem 0rem, none, none);
+    .boxProperties(0rem, 0rem 0rem 5rem 0rem, none, none);
 
     .aboutItemImage {
 
@@ -25,7 +25,16 @@
         width: 60%;
 
         .flexProperties(column, center, flex-start);
-        .boxProperties(0rem, 0rem 0rem 0rem 5rem, none, none);
+        .boxProperties(0rem, 0rem 0rem 0rem 2.5rem, none, none);
+
+        .aboutItemSubtitle {
+
+            font-family: @jobTitleFont;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            margin-left: 1.5rem;
+
+        }
 
         p {
 
@@ -39,6 +48,7 @@
 
             font-family: @pFont;
             font-size: 3rem;
+            margin-left: 3rem;
 
 
         }
