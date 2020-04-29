@@ -1,14 +1,33 @@
 .aboutItem {
 
     .flexProperties(row, center);
-    .boxProperties(0rem, 2.5rem 0rem 2.5rem 0rem, none, none);
+    .boxProperties(0rem, 0rem 0rem 5rem 0rem, none, none);
+
+    @media @tablet {
+
+        .flexProperties(column, center);
+
+    }
 
     .aboutItemImage {
 
         width: 40%;
 
-        .flexProperties(column, flex-end, flex-end);
+        .flexProperties(column, center, center);
         .boxProperties(0rem, 0rem, none, none);
+
+        @media @smallDesktop {
+
+            width: 30%;
+
+        }
+
+        @media @tablet {
+            
+            width: 100%;
+            padding-bottom: 3rem;
+
+        }
 
         img {
 
@@ -25,21 +44,82 @@
         width: 60%;
 
         .flexProperties(column, center, flex-start);
-        .boxProperties(0rem, 0rem 0rem 0rem 5rem, none, none);
+        .boxProperties(0rem, 0rem 0rem 0rem 2.5rem, none, none);
+        
+        @media @smallDesktop {
+
+            width: 70%;
+
+        }
+
+        @media @tablet {
+
+            .flexProperties(column, center, center);
+            .boxProperties(0rem, 0rem, none, none);
+
+        }
+
+        .aboutItemSubtitle {
+
+            font-family: @jobTitleFont;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            margin-left: 1.5rem;
+            color: @subtitlePrimary;
+            
+            @media @tablet {
+    
+                font-size: 5rem;
+                margin-left: 0rem;
+    
+            }
+
+        }
 
         p {
 
             font-family: @nameFont;
             font-size: 6rem;
-            color: @navLinks;
+            color: @titlePrimary;
+            
+            @media @tablet {
+    
+                font-size: 6rem;
+                margin-left: 0rem;
+                text-align: center;
+    
+            }
 
         }
 
-        a {
+        .largeLink {
 
             font-family: @pFont;
             font-size: 3rem;
+            margin-left: 3rem;
+            
+            @media @tablet {
+    
+                display: none;
+    
+            }
 
+        }
+
+        .smallLink {
+
+            display: none;
+            
+            @media @tablet {
+
+                display: block;
+    
+                font-family: @pFont;
+                font-size: 3rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+    
+            }
 
         }
 
