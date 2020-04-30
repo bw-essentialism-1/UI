@@ -188,7 +188,7 @@ footer div p {
 }
 @media (max-width: 800px) {
   #headerSpacing {
-    padding-top: 35rem;
+    padding-top: 25rem;
   }
 }
 @media (max-width: 500px) {
@@ -233,6 +233,11 @@ footer div p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .fixedHeader div {
+    width: 80%;
+  }
 }
 .fixedHeader div #primary {
   display: flex;
@@ -386,13 +391,14 @@ footer div p {
 }
 @media (max-width: 800px) {
   .fixedHeader div nav {
+    width: 100%;
     margin-left: 0rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 500px) {
@@ -421,7 +427,7 @@ footer div p {
     border-width: 1px;
     border-radius: 0px;
     text-align: center;
-    width: 50%;
+    width: 30%;
   }
 }
 @media (max-width: 500px) {
@@ -502,7 +508,7 @@ footer div p {
 }
 .marketingCopyL2R .L2RTitle {
   padding: 15rem 10rem 15rem 10rem;
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 0rem;
   border-color: #61892f;
   border-style: solid;
   border-width: 0px 2.5px 15px 0px;
@@ -516,7 +522,7 @@ footer div p {
   .marketingCopyL2R .L2RTitle {
     padding-right: 0rem;
     padding: 15rem 10rem 15rem 10rem;
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 0rem;
     border-color: #61892f;
     border-style: solid;
     border-width: 0px 2.5px 5px 0px;
@@ -529,7 +535,7 @@ footer div p {
   .marketingCopyL2R .L2RTitle {
     width: 100%;
     padding: 5rem 0rem 5rem 0rem;
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 0rem;
     border-color: #61892f;
     border-style: solid;
     border-width: 0px 2.5px 15px 0px;
@@ -540,7 +546,7 @@ footer div p {
 @media (max-width: 500px) {
   .marketingCopyL2R .L2RTitle {
     padding: 5rem 5rem 5rem 5rem;
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 0rem;
     border-color: #61892f;
     border-style: solid;
     border-width: 0px 0px 15px 0px;
@@ -574,7 +580,7 @@ footer div p {
 }
 .marketingCopyL2R .L2RText {
   padding: 15rem 10rem 15rem 10rem;
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 0rem;
   border-color: none;
   border-style: none;
   border-width: 0px;
@@ -625,7 +631,7 @@ footer div p {
 }
 .marketingCopyR2L .R2LTitle {
   padding: 15rem 10rem 15rem 10rem;
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 0rem;
   border-color: #61892f;
   border-style: solid;
   border-width: 0px 0px 15px 2.5px;
@@ -638,7 +644,7 @@ footer div p {
 @media (max-width: 1050px) {
   .marketingCopyR2L .R2LTitle {
     padding: 15rem 10rem 15rem 10rem;
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 0rem;
     border-color: #61892f;
     border-style: solid;
     border-width: 0px 0px 5px 2.5px;
@@ -691,7 +697,7 @@ footer div p {
 }
 .marketingCopyR2L .R2LText {
   padding: 15rem 10rem 15rem 10rem;
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 0rem;
   border-color: none;
   border-style: none;
   border-width: 0px;
