@@ -186,6 +186,11 @@ footer div p {
   border-width: 1px;
   border-radius: 0px;
 }
+@media (max-width: 1050px) {
+  #headerSpacing {
+    padding-top: 22rem;
+  }
+}
 @media (max-width: 800px) {
   #headerSpacing {
     padding-top: 25rem;
@@ -296,6 +301,7 @@ footer div p {
 }
 @media (max-width: 800px) {
   .fixedHeader div #secondary {
+    width: 50%;
     padding-top: 1.5rem;
   }
 }
@@ -481,7 +487,7 @@ footer div p {
   background-color: #EEEEEE;
   padding: 3rem;
   margin: 0rem;
-  border-color: #61892f;
+  border-color: #6b6e70;
   border-style: solid;
   border-width: 0rem 2px 7.5px 2px;
   border-radius: 3rem;
@@ -491,6 +497,9 @@ footer div p {
     text-align: center;
     width: 90%;
   }
+}
+#callToAction div a:hover {
+  color: #86c232;
 }
 .marketingCopyL2R {
   display: flex;
