@@ -13,7 +13,7 @@
 
         width: 40%;
 
-        .flexProperties(column, center, center);
+        .flexProperties(column, center, flex-end);
         .boxProperties(0rem, 0rem, none, none);
 
         @media @smallDesktop {
@@ -24,6 +24,7 @@
 
         @media @tablet {
             
+            .flexProperties(column, center, center);
             width: 100%;
             padding-bottom: 3rem;
 
@@ -33,7 +34,7 @@
 
             width: 200px;
             height: 200px;
-            border-radius: 5rem;
+            .boxProperties(0rem, 0rem, @darkGray, solid, 5px, 5rem);
 
         }
 

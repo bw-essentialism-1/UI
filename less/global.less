@@ -49,7 +49,7 @@ footer {
 
     @media @tablet {
 
-        padding-top: 30rem;
+        padding-top: 25rem;
 
     }
 
@@ -88,6 +88,12 @@ footer {
     div {
 
         .flexProperties(row);
+
+        @media @tablet {
+
+            width: 80%;
+
+        }
 
         #primary {
 
@@ -154,6 +160,18 @@ footer {
             .flexProperties(column, center, flex-start);
     
             padding-top: 2rem;
+
+            @media @tablet {
+
+                padding-top: 1.5rem;
+
+            }
+
+            @media @mobile {
+
+                padding-top: 1rem;
+
+            }
     
             h1 {
     
@@ -226,9 +244,11 @@ footer {
 
             @media @tablet {
 
+                width: 100%;
                 margin-left: 0rem;
                 .flexProperties(row);
                 flex-wrap: wrap;
+                font-size: 2.5rem;
 
             }
 
@@ -245,10 +265,9 @@ footer {
 
                 @media @tablet {
     
-                    //.boxProperties(0rem, 2rem 2rem 2rem 2rem, none, none);
                     .boxProperties(2rem 0rem 2rem 0rem, 0rem, none, none);
                     text-align: center;
-                    width: 50%;
+                    width: 30%;
 
                 }
 
